@@ -1,5 +1,5 @@
 
-#STILL  THIS SOFTWARE IS IN RUSSIAN. WE WILL REMOVE THIS NOTICE AS SOON AS IT"S TRANSLATED FULLY INTO ENGLISH!!!
+# STILL  THIS SOFTWARE IS IN RUSSIAN. WE WILL REMOVE THIS NOTICE AS SOON AS IT"S TRANSLATED FULLY INTO ENGLISH!!!
 
 
 
@@ -16,7 +16,7 @@ Bash Scripts for backing up  MySQL/PostgreSQL
 - Debug mode: logging any commands done by the script.
 - General Config file: setting variables as constants.
 
-##Setup
+## Setup
 Clone Repo:
 ```markdown
 git clone https://github.com/gelinger777/db_suite
