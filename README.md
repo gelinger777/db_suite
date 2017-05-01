@@ -1,3 +1,8 @@
+
+#STILL  THIS SOFTWARE IS IN RUSSIAN. WE WILL REMOVE THIS NOTICE AS SOON AS IT"S TRANSLATED FULLY INTO ENGLISH!!!
+
+
+
 # DB Suite v1.9 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
 Bash Scripts for backing up  MySQL/PostgreSQL
 
