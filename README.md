@@ -1,24 +1,24 @@
 # DB Suite v1.9 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
-Скрипты для управления и резервного копирования MySQL/PostgreSQL
+Bash Scripts for backing up  MySQL/PostgreSQL
 
-## Возможности скриптов
-- Установка и настройка сервера MySQL/PostgreSQL: деплой нового сервера.
-- Создание дампов баз данных по расписанию. 
-- Ротация бекапов: поиск и удаление старых дампов.
-- Cинхронизация файлов бекапа с удаленным ftp-хранилищем.
-- Отправка e-mail уведомлений через SMTP-сервер.
-- Отправка сообщений в Telegram любому пользователю.
-- Режим отладки: запись выполнения любой команды в скриптах.
-- Общий файл конфигарации: определение констант.
+## features
+- Setup and configuration of new MySQL/PostgreSQL: deploying a new server
+- Creating scheduled  dump files of databases 
+- Rotation of backups:search and delition of the backups.
+- Sync of the local dumps with remote ftp-server.
+- Sending e-mail notifications via  SMTP-server.
+- Sending Telegram notifications.
+- Debug mode: logging any commands done by the script.
+- General Config file: setting variables as constants.
 
-## Установка
-Клонируем репозиторий:
+##Setup
+Clone Repo:
 ```markdown
-git clone https://github.com/olegbukatchuk/db_suite
+git clone https://github.com/gelinger777/db_suite
 ```
-и прописываем значения переменных и констант в конфиге config.sh, а также в файле action/email.sh для отправки отчётов на e-mail.
+then setup configuration variables at config.sh. Also in  action/email.sh setup server for sending email notifications and reports to your  e-mail.
 
-### Пример работы скрипта
+### Example of work
 ```markdown
 user@host:~$ /path/to/db_suite/postgresql/postgresql_backup.sh 
 Проверка наличия директории для хранения бекапов...
@@ -36,22 +36,22 @@ OK
 
 Не забудьте при необходимости повторения процедуры поставить задание в планировщик у себя на сервере.
 
-Ставим скрипт на выполнение (из консоли) в 1 час 00 минут после полуночи ежедневно:
+Setting up a cronjob   to be run at  1:00 AM  daily:
 
 ```markdown
 crontab -e
 
-# Добавляем в конец файла наше задание
+# add the following line with right path
 
 0 1 * * * /path/to/db_suite/postgresql/postgresql_backup.sh
 ```
-Сохраняем и перезапускаем Cron:
+Save and restart the  Cron:
 
 ```markdown
 sudo service cron restart
 ```
-Готово!
+Ready!
 
-## Поддержка и контакты
+## Credits 
 
-Есть вопрос или предложение? Свяжитесь со мной любым удобным вам способом из представленных у меня на сайте [bukatchuk.com](https://bukatchuk.com/contacts/).
+ Oleg Bukatchuk aka  @olegbukatchuk  [bukatchuk.com](https://bukatchuk.com/contacts/).
